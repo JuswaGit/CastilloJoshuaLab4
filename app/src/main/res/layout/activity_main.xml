@@ -7,8 +7,11 @@
     tools:context=".MainActivity">
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="69dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -18,7 +21,7 @@
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
-                android:layout_height="279dp"
+                android:layout_height="293dp"
                 app:srcCompat="@drawable/solaire" />
 
             <TextView
@@ -71,7 +74,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Distance from UST:"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    tools:layout_editor_absoluteX="89dp"
+                    tools:layout_editor_absoluteY="460dp" />
 
                 <TextView
                     android:id="@+id/textView6"
@@ -83,36 +88,37 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="201dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="4dp"
+                tools:layout_editor_absoluteY="556dp">
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="1"
+                    android:onClick="show"
+                    android:text="Back" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="1"
+                    android:onClick="display"
+                    android:text="Next" />
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
-
-    <LinearLayout
-        android:layout_width="403dp"
-        android:layout_height="119dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="524dp">
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_weight="1"
-            android:onClick="show"
-            android:text="Back" />
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            android:onClick="display"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:text="Next" />
-    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
